@@ -21,7 +21,7 @@ export default function Navbarr() {
             {
               store.navbar.map((navitem,index)=>(
                 navitem.childs ? (
-                  <Dropdown key={index}>
+                  <Dropdown className='d-flex-centring my-2' key={index}>
                   <Dropdown.Toggle className='nav-item d-flex-centring blog-dropdown' id="dropdown-basic">
                     {navitem.title}
                   </Dropdown.Toggle>
@@ -33,18 +33,18 @@ export default function Navbarr() {
                   </Dropdown.Menu>
                 </Dropdown>
                 ): (
-                  <Link className='nav-item d-flex-centring' to={navitem.path}>{navitem.title}</Link>
+                  <Link className='nav-item d-flex-centring my-2' to={navitem.path}>{navitem.title}</Link>
                 )
               ))
             }
            
           </Nav>
           <Nav>
-          <Link  className='d-flex-centring nav-item'>
+          <Link  className='d-flex-centring nav-item my-2'>
             Call Us : (+98) 9195805686
           </Link>
            
-              <Link className='navbar-btn btn d-flex-centring'> Sign In</Link>
+              <Link className='navbar-btn btn d-flex-centring my-2'> Sign In</Link>
             
           </Nav>
         </Navbar.Collapse>
