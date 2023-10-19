@@ -1,0 +1,32 @@
+.navbar-main-container{
+       background-color: #004274;
+}
+.nav-item{
+       color: aliceblue;
+       text-decoration: none;
+       font-size: 1.2rem;
+       margin: 0 2vw;
+       transition: all .5s;
+     
+}
+.blog-dropdown{
+       background-color: transparent;
+       border: 0;
+}
+.nav-item:hover{
+       background: linear-gradient(to top , #0d6efd 20%,#00AEFF 20%,#fff 70% );
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+}
+.navbar-btn{
+       background-color: #00AEFF;
+       color: aliceblue;
+       padding: 1.5vh 2vw;
+       font-weight: 500;
+       transition: all .5s;
+}
+.navbar-btn:hover{
+       background-color: transparent;
+       border: 1px solid #00AEFF;
+       color: #00AEFF;
+}
