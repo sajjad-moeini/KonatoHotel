@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './HelpServices.css'
 import store from '../../store'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 export default function HelpServices() {
+  useEffect(()=>{
+    AOS.init();
+  },[])
   return (
     <>
     <div className="home-service-section py-5">

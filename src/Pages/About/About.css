@@ -1,0 +1,9 @@
+.about-page-btn{
+       background: #00AEFF;
+       padding: 1.5vh .5vw;
+       text-wrap: nowrap;
+       transition: all .5s;
+}
+.about-page-btn:hover{
+       background: linear-gradient(to right,#0d6efd 70%,#00AEFF);
+}
