@@ -9,7 +9,7 @@ export default function HomeSuggestPlaceCarousel() {
                      <Carousel className='carousel-container' fade>
                             {
                                    store.homeSuggestPlaceCarousel.map((item, index) => (
-                                          <Carousel.Item key={index} className='w-100 h-100' style={{ background: `url(${item.bg})` }}>
+                                          <Carousel.Item key={index} className='w-100 h-100' style={{ background: `url(${item.bg})`, animation:`homeCarousel 1.5s` }}>
                                                  <div className={`home-suggest-place-carousel-bg `}>
                                                         <div className="w-100 h-100 home-suggest-place-carousel-item">
                                                                <div className=" w-50 h-100 d-flex-centring flex-column">

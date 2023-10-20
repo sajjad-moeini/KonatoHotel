@@ -1,10 +1,11 @@
 import React, { useEffect } from 'react'
 import Dropdown from 'react-bootstrap/Dropdown';
-
 import './Home.css'
 import store from '../../store';
 import HomeSuggestPlaceCarousel from '../../../public/Components/HomeSuggestPlaceCarousel/HomeSuggestPlaceCarousel';
 import HomePropertiesSwiper from '../../../public/Components/HomePropertiesSwiper/HomePropertiesSwiper';
+
+
 export default function Home() {
   useEffect(() => {
     document.title = 'Home'
@@ -31,7 +32,11 @@ export default function Home() {
                 <div className="col-6 col-md-2" key={index}>
                   <Dropdown className='w-100'>
                     <Dropdown.Toggle className='home-first-order-dropdowns my-2 ' >
-                      {box.title}
+                      {box.icon ? (
+                        <>
+                          <i className={`${box.icon} me-2`}></i> {box.title}
+                        </>
+                      ) : (<>{box.title}</>)}
                     </Dropdown.Toggle>
                     <Dropdown.Menu>
                       {box.subtitle.map((subTitle, index) => (
@@ -54,15 +59,97 @@ export default function Home() {
         <HomeSuggestPlaceCarousel />
       </div>
       <div className="Home-LastestAndFeatured-Section">
-<div className=" d-flex-centring flex-column my-5 Home-LastestAndFeatured-Section-title-container" >
-  <div className="h1 Home-LastestAndFeatured-Section-title-container-title">Display Latest & Featured Properties</div>
-  <p className=' Home-LastestAndFeatured-Section-title-container-text mt-2'>Get started by choosing from one of our pre-built page templates to showcase your properties</p>
-  
-</div>
+        <div className=" d-flex-centring flex-column my-5 Home-LastestAndFeatured-Section-title-container" >
+          <div className="h1 Home-LastestAndFeatured-Section-title-container-title">Display Latest & Featured Properties</div>
+          <p className=' Home-LastestAndFeatured-Section-title-container-text mt-2'>Get started by choosing from one of our pre-built page templates to showcase your properties</p>
 
-<div style={{height:'50vh'}} className='w-75 mx-auto'>
-  <HomePropertiesSwiper />
-</div>
+        </div>
+
+        <div style={{ height: '70vh' }} className='w-75 mx-auto my-5'>
+          <HomePropertiesSwiper products={store.LastestAndFeaturedProperty} />
+        </div>
+      </div>
+      <div className="home-service-section py-5">
+        <div className="row  d-flex-centring text-light home-service-section-title my-5">
+          How we help people?
+        </div>
+        <div className="row w-75 mx-auto">
+          {store.homeServiceBoxes.map((item, index) => (
+            <div key={index} className='col-12 col-md-4 home-service-section-box d-flex align-items-center flex-column justify-content-center' data-aos={item.aos} data-aos-duration="1500">
+              <img src={item.img} className='home-service-section-box-img' alt="" />
+              <div className='text-light my-4 home-service-section-box-title'>{item.title}</div>
+              <p className='text-light w-75 mx-auto text-center'>
+                {item.text}
+              </p>
+            </div>
+          ))}
+
+        </div>
+      </div>
+      <div className="Home-property-of-sale-Section">
+        <div className=" d-flex-centring flex-column my-5 Home-property-of-sale-Section-title-container" >
+          <div className="h1 Home-LastestAndFeatured-Section-title-container-title">Properties for Sale</div>
+
+        </div>
+
+        <div style={{ height: '70vh' }} className='w-75 mx-auto my-5'>
+          <HomePropertiesSwiper products={store.LastestAndFeaturedProperty} />
+        </div>
+      </div>
+
+      <div className="explore-with-property-type-section ">
+        <div className="row">
+          <div className="col-12 col-md-4">
+            <div className="h1">
+              Explore
+              by Property Type
+            </div>
+            <p className='my-4 text-secondary'>
+              Get started by choosing from one of our pre-built page templates to showcase your properties
+            </p>
+            <a href="" className='explore-with-property-type-section-btn mt-4'>View Property</a>
+          </div>
+          {store.exploreWithPropertyTypeSection.map((item, index) => (
+            <div className="col-12 col-md-2 mt-3 mt-md-0 explore-with-property-type-section-box d-flex justify-content-around align-items-center flex-column" data-aos="fade-up" data-aos-duration={item.aosTime} key={index}>
+              <img src={item.img} className='explore-with-property-type-section-box-img mb-5' alt="" />
+              <a href="" className='text-dark explore-with-property-type-section-box-title'>
+                {item.title}
+              </a>
+            </div>
+          ))}
+
+
+
+        </div>
+      </div>
+
+      <div className="agent-section my-5">
+        <div className='agent-section-title-container p-5 d-flex-centring flex-column'>
+          <div className="h1 mt-5">Our Agents</div>
+          <p className='text-secondary w-25 text-center mx-auto mt-2'>Get started by choosing from one of our pre-built page templates to showcase your properties</p>
+        </div>
+        <div className="row w-75 mx-auto">
+          {
+            store.agents.map((agent,index)=>(
+              <div className="col-12 col-md-3 position-relative agent-box-container" key={index}>
+              <img src={agent.img} className='img-fluid' alt="" />
+              <div className="persons-socials-container d-flex-centring s  position-absolute">
+                <div className="w-50 d-flex-centring justify-content-around">
+  
+  
+                  <i className='fa fa-facebook person-scoial-icon rounded-circle' style={{ transition: 'all .3s' }}></i>
+                  <i className='fa fa-twitter person-scoial-icon rounded-circle' style={{ transition: 'all .6s' }}></i>
+                  <i className='fa fa-internet-explorer person-scoial-icon rounded-circle' style={{ transition: 'all .9s' }}></i>
+                </div>
+                
+              </div>
+              <div className='agent-name text-center'>{agent.name}</div>
+                <div className='agent-post text-center text-secondary'>{agent.post}</div>
+            </div>
+            ))
+          }
+         
+        </div>
       </div>
     </>
   )

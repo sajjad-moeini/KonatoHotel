@@ -19,10 +19,7 @@ font-size: 3.2rem !important;
 .suggest-carousel-place-price{
        font-size: 2.2rem !important;
 }
-.suggest-carousel-place-btn-container{
 
-
-}
 .suggest-carousel-place-btn{
        background: #00AEFF !important;
        position: relative;
@@ -38,4 +35,19 @@ font-size: 3.2rem !important;
 
 .suggest-carousel-place-btn:hover{
        background: linear-gradient(to right,rgba(30, 103, 167, 0.53) 60%,#00AEFF) !important;
+}
+
+@keyframes homeCarousel{
+       0%{
+              width: 0% !important;
+              height: 0% !important;
+              transform: scale(0)rotateY(0deg)rotateX(0deg);
+            
+       }
+       100%{
+              transform: scale(1)rotateY(360deg)rotateX(360deg);
+              width: 100% !important;
+              height: 100% !important;
+              
+       }
 }
