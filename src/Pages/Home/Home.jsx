@@ -151,6 +151,22 @@ export default function Home() {
          
         </div>
       </div>
+
+      <div className="sucscribe-newsletter-section">
+        <div className="row">
+          <div className="col-12 col-md-6 d-flex flex-column justify-content-around subscribe-newsleter-infos">
+            <div className="h1 text-light">Subscribe Newsletter</div>
+            <p className='w-75 text-light'>Get started by choosing from one of our pre-built page templates to showcase your properties</p>
+            <input type="text" className='form-control' />
+            <div>
+            <button className=' btn newslater-btn text-light'>Subscribe</button>
+            </div>
+          </div>
+          <div className="col-12 col-md-6">
+            <img src="images/home/subscribe-img.jpg.webp" alt="" />
+          </div>
+        </div>
+      </div>
     </>
   )
 }

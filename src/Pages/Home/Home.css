@@ -147,6 +147,10 @@ color: #444 !important;
 .agent-name{
 font-size: 1.7rem;
 }
-.agent-post{
-
+.sucscribe-newsletter-section{
+       padding: 0 5vw;
+       background-color: #004274;
+}
+.newslater-btn{
+       background-color: #00A0EB !important;
 }
