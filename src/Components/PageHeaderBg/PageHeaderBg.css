@@ -1,0 +1,9 @@
+.available-places-section{
+       width: 100vw;
+       height: 40vh;
+       /* background: url(../../../public/images/property/h2_hero1.jpg.webp); */
+       background-size: cover;
+}
+.available-places-section-wrapper{
+       background-color: #0c0c0c69;
+}

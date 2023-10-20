@@ -1,0 +1,30 @@
+.home-service-section{
+       width: 100%;
+       background: url(../../../public/images/home/section-bg1.jpg.webp);
+       background-size: cover;
+}
+.home-service-section-title{
+       font-size: 3rem;
+       height: 40%;
+}
+.home-service-section-box{
+       background: #00A0EB;
+       height: 40vh;
+       box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.205);
+       cursor: pointer;
+       
+}
+.home-service-section-box:nth-last-of-type(3){
+       border-bottom-left-radius: .8rem;
+       border-top-left-radius: .8rem;
+}
+.home-service-section-box:nth-last-of-type(1){
+       border-bottom-right-radius: .8rem;
+       border-top-right-radius: .8rem;
+}
+.home-service-section-box-img{
+       width: 70px;
+}
+.home-service-section-box-title{
+       font-size: 1.5rem;
+}

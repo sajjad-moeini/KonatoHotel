@@ -15,8 +15,8 @@
      
 }
 .blog-dropdown{
-       background-color: transparent;
-       border: 0;
+       background-color: transparent !important;
+       border: 0 !important;
 }
 .nav-item:hover{
        background: linear-gradient(to top , #0d6efd 20%,#00AEFF 20%,#fff 70% );
@@ -31,7 +31,50 @@
        transition: all .5s;
 }
 .navbar-btn:hover{
-       background-color: transparent;
-       border: 1px solid #00AEFF;
-       color: #00AEFF;
+       background-color: transparent !important;
+       border: 1px solid #00AEFF !important;
+       color: #00AEFF !important;
+}
+/* orderbox start */
+.home-first-order-dropdowns{
+       width: 100%;
+       background-color: aliceblue !important;
+       color: #00AEFF !important;
+       border: 0 !important;
+       display: flex !important;
+       justify-content: center !important;
+       align-items: center !important;
+}
+.search-btn{
+       background-color: transparent !important;
+       border: 0;
+       font-size: 1.5rem !important;
+}
+.searchbar-input:focus{
+outline: none !important;
+border: none !important;
+}
+.searchbar-container{
+       border: 1px solid #444;
+       border-radius: .7rem;
+      
+}
+.dropdown-menu{
+       background-color: #00aeff85 !important;
+       border: 1px solid aliceblue !important;
+}
+.dropdown-item{
+       color: aliceblue !important;
+}
+.dropdown-item:hover{
+color: #444 !important;
+}
+.order-boxes-btn{
+       background-color: #004274;
+       transition: all .5s;
+       white-space: nowrap;
+}
+.order-boxes-btn:hover{
+       background-color: #00AEFF;
+       color: aliceblue;
 }

@@ -1,0 +1,24 @@
+.persons-socials-container{
+       bottom: 0;
+       right: 0;
+       left: 0;
+       height: 35%;
+       
+       overflow: hidden;
+}
+.person-scoial-icon{
+       font-size: 1.6rem !important;
+       background-color: #004274;
+       padding:  .7vw;
+       transform: translateY(15vh);
+       transition: all .7s
+}
+.agent-box-container{
+       cursor: pointer;
+}
+.agent-box-container:hover .person-scoial-icon{
+       transform: translateY(-5vh);
+}
+.agent-name{
+font-size: 1.7rem;
+}
