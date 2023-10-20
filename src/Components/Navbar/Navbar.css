@@ -1,5 +1,10 @@
 .navbar-main-container{
        background-color: #004274;
+       position: sticky !important;
+       top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      z-index: 10;
 }
 .nav-item{
        color: aliceblue;
@@ -19,8 +24,8 @@
        -webkit-text-fill-color: transparent;
 }
 .navbar-btn{
-       background-color: #00AEFF;
-       color: aliceblue;
+       background-color: #00AEFF !important;
+       color: aliceblue !important;
        padding: 1.5vh 2vw;
        font-weight: 500;
        transition: all .5s;
