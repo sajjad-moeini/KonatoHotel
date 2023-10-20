@@ -29,4 +29,22 @@ color: #444 !important;
 }
 .order-boxes-btn{
        background-color: #004274;
+       transition: all .5s;
+}
+.order-boxes-btn:hover{
+       background-color: #00AEFF;
+       color: aliceblue;
+}
+.suggest-places{
+       height: 85vh;    
+       background-size: cover;
+}
+.Home-LastestAndFeatured-Section-title-container{
+       height: 20vh;
+}
+.Home-LastestAndFeatured-Section-title-container-text{
+       font-size: 1rem;
+       width: 30%;
+       text-align: center;
+       color: #616060;
 }

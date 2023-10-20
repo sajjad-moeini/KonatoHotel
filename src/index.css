@@ -19,3 +19,14 @@
   justify-content: center ;
   align-items: center ;
 }
+body{
+  width: 100vw !important;
+  overflow-x: hidden;
+  background-color: #F2F4F8;
+}
+a{
+  text-decoration: none !important;
+}
+#root{
+  width: 100vw !important;
+}

@@ -26,14 +26,14 @@ export default function Navbarr() {
                     {navitem.title}
                   </Dropdown.Toggle>
             
-                  <Dropdown.Menu>
+                  <Dropdown.Menu >
                   {navitem.childs.map((child,index)=>(
-                       <Link className='dropdown-item' to={child.path} key={index}>{child.title}</Link>
+                       <Link className='dropdown-item' to={child.path} key={index} >{child.title}</Link>
                      ))}
                   </Dropdown.Menu>
                 </Dropdown>
                 ): (
-                  <Link className='nav-item d-flex-centring my-2' to={navitem.path}>{navitem.title}</Link>
+                  <Link key={index} className='nav-item d-flex-centring my-2' to={navitem.path}>{navitem.title}</Link>
                 )
               ))
             }
