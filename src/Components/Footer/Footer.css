@@ -1,0 +1,27 @@
+.footer-social-icons{
+       font-size: 1.5rem !important;
+       transition: all .7s;
+       cursor: pointer;
+}
+.footer-social-icons:hover{
+       transform: rotateY(180deg);
+}
+ul{list-style: none;}
+.footer-ul-header{
+     color: #0c0c0c !important;
+     font-weight: 600;
+     font-size: 1.5rem;
+    
+}
+.footer-li{
+cursor: pointer;
+transition: all .5s !important;
+}
+.footer-li:hover{
+       transform: translateX(3vw);
+}
+.footer-number{
+       color: #092b5e;
+       font-size: 1.5rem;
+       font-weight: 500;
+}

@@ -2,8 +2,8 @@ import React, { useEffect } from 'react'
 import Dropdown from 'react-bootstrap/Dropdown';
 import './Home.css'
 import store from '../../store';
-import HomeSuggestPlaceCarousel from '../../../public/Components/HomeSuggestPlaceCarousel/HomeSuggestPlaceCarousel';
-import HomePropertiesSwiper from '../../../public/Components/HomePropertiesSwiper/HomePropertiesSwiper';
+import HomeSuggestPlaceCarousel from './../../Components/HomeSuggestPlaceCarousel/HomeSuggestPlaceCarousel';
+import HomePropertiesSwiper from './../../Components/HomePropertiesSwiper/HomePropertiesSwiper';
 
 
 export default function Home() {
@@ -131,7 +131,7 @@ export default function Home() {
         <div className="row w-75 mx-auto">
           {
             store.agents.map((agent,index)=>(
-              <div className="col-12 col-md-3 position-relative agent-box-container" key={index}>
+              <div className="col-12 col-md-3 position-relative agent-box-container mt-5" key={index}>
               <img src={agent.img} className='img-fluid' alt="" />
               <div className="persons-socials-container d-flex-centring s  position-absolute">
                 <div className="w-50 d-flex-centring justify-content-around">
@@ -155,15 +155,15 @@ export default function Home() {
       <div className="sucscribe-newsletter-section">
         <div className="row">
           <div className="col-12 col-md-6 d-flex flex-column justify-content-around subscribe-newsleter-infos">
-            <div className="h1 text-light">Subscribe Newsletter</div>
-            <p className='w-75 text-light'>Get started by choosing from one of our pre-built page templates to showcase your properties</p>
-            <input type="text" className='form-control' />
+            <div className="h1 text-light my-4">Subscribe Newsletter</div>
+            <p className='w-75 text-light my-4'>Get started by choosing from one of our pre-built page templates to showcase your properties</p>
+            <input type="text" className='form-control my-4' placeholder='Enter Your Email ...' />
             <div>
-            <button className=' btn newslater-btn text-light'>Subscribe</button>
+            <button className=' btn newslater-btn text-light my-4'>Subscribe</button>
             </div>
           </div>
           <div className="col-12 col-md-6">
-            <img src="images/home/subscribe-img.jpg.webp" alt="" />
+            <img src="images/home/subscribe-img.jpg.webp" className=' mx-auto' alt="" />
           </div>
         </div>
       </div>

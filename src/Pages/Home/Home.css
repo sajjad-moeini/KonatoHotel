@@ -30,6 +30,7 @@ color: #444 !important;
 .order-boxes-btn{
        background-color: #004274;
        transition: all .5s;
+       white-space: nowrap;
 }
 .order-boxes-btn:hover{
        background-color: #00AEFF;
@@ -147,8 +148,10 @@ color: #444 !important;
 .agent-name{
 font-size: 1.7rem;
 }
+.subscribe-newsleter-infos{
+       padding: 0 5vw !important;
+}
 .sucscribe-newsletter-section{
-       padding: 0 5vw;
        background-color: #004274;
 }
 .newslater-btn{

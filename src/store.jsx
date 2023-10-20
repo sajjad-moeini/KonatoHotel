@@ -20,7 +20,7 @@ let store = {
        homeSuggestPlaceCarousel:[
               {bg:"../../../public/images/home/h1_hero1.jpg.webp",title:' Light House NY',price:3272},
               {bg:"../../../public/images/home/best-halong-cruises.jpg",title:'Indonesia Beach',price:2777},
-              {bg:"../../../public/images/home/Tropical-Modern-House-Costa-Rica_1.jpg",title:'Tropical Modern House Costa Rica',price:4999},
+              {bg:"../../../public/images/home/Tropical-Modern-House-Costa-Rica_1.jpg",title:'Tropical Modern House',price:4999},
        ],
        LastestAndFeaturedProperty:[
               {img:'images/home/items1.jpg.webp',title:'Appartment',price:7675,aos:"fade-down",aosTime:'1000'},
@@ -48,6 +48,14 @@ let store = {
               {img:"images/persons/team3.jpg.webp",name:'Nick R. Bocker',post:'Real Estate Agent'},
               {img:"images/persons/team4.jpg.webp",name:'Holly Graham',post:'Real Estate Agent'},
               
+       ],
+       footerUls:[
+              {title:'Navigation',
+       li:['Home','About','Services','Blog','Contact']},
+              {title:'Services',
+       li:['Drone Mapping','Real State','Commercial','Construction',]},
+              {title:'Support',
+       li:['Drone Mapping','Real State','Commercial','Construction',]},
        ]
 }
 
