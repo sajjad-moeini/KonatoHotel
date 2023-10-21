@@ -82,6 +82,11 @@ let store = {
               'images/BLOG/post_8.jpg.webp',
               'images/BLOG/post_9.jpg.webp',
               'images/BLOG/post_10.jpg.webp',
+       ],
+       contactUsMiniBox:[
+              {icon:'fa-home',title:'Iran , Tehran',subTitle:'Gholhak'},
+              {icon:'fa-phone',title:'(+98)9195805686',subTitle:'Mon to Fri 9am to 6pm'},
+              {icon:'fa-inbox',title:'sajjadmoeini97@gmail.com',subTitle:'Send us your query anytime!'},
        ]
 }
 

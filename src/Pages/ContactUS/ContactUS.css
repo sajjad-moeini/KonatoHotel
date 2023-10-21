@@ -1,0 +1,21 @@
+.contact-us-page-title{
+       font-size: 2rem;
+       font-weight: 500;
+}
+.contact-us-btn{
+       border: 1px solid #00AEFF !important;
+       padding: .5vh 2vw;
+       font-size: 1.5rem;
+       transition: all .5s;
+}
+.contact-us-btn:hover{
+       background-color: #00AEFF;
+       color: aliceblue !important;
+}
+.contact-us-minibox-icon{
+       font-size: 3rem;
+}
+.contact-us-minibox-title{
+       font-size: 1.2rem;
+       font-weight: 500;
+}
