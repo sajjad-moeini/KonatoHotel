@@ -3,13 +3,7 @@ let store = {
               { title: 'Home', path: '/' },
        { title: 'Property', path: '/Property' },
        { title: 'About', path: '/About' },
-       {
-              title: 'Blog', childs: [
-                     { title: 'Blog', path: '/Blog' },
-                     { title: 'Blog Detailes', path: '/BlogDetailes' },
-                     { title: 'Elements', path: '/Elements' },
-              ],
-       },
+       {title: 'Blog', path: '/Blog' },
        { title: 'Contact', path: '/Contact' },
        ],
        orderBoxes:[
@@ -56,6 +50,38 @@ let store = {
        li:['Drone Mapping','Real State','Commercial','Construction',]},
               {title:'Support',
        li:['Drone Mapping','Real State','Commercial','Construction',]},
+       ],
+       blogCards:[
+              "images/BLOG/single_blog_1.jpg.webp",
+              "images/BLOG/single_blog_2.jpg.webp",
+              "images/BLOG/single_blog_3.jpg.webp",
+              "images/BLOG/single_blog_4.jpg.webp",
+              "images/BLOG/single_blog_5.jpg.webp",
+       ],
+       blogCategoryItems:[
+              'Resaurant food(37)',
+              'Travel news(10)',
+              'Modern technology(03)',
+              'Product(11)',
+              'Inspiration(21)',
+              'Health Care (9)',
+       ],
+       blogRecentPosts:[
+              {img:'images/BLOG/post_1.jpg.webp' , title:'From life was you fish...' ,subTitle :'January 12, 2019'},
+              {img:'images/BLOG/post_2.jpg.webp' , title:'The Amazing Hubble' ,subTitle :'January 17, 2021'},
+              {img:'images/BLOG/post_3.jpg.webp' , title:'Astronomy Or Astrology' ,subTitle :'3 Days Ago'},
+              {img:'images/BLOG/post_4.jpg.webp' , title:'Asteroids telescope' ,subTitle :'1 Hour Ago'},
+       ],
+       blogTags:[
+              'Project','Love','technology','travel','restaurant','life style','design','illustration'
+       ],
+       blogInstagramFeed:[
+              'images/BLOG/post_5.jpg.webp',
+              'images/BLOG/post_6.jpg.webp',
+              'images/BLOG/post_7.jpg.webp',
+              'images/BLOG/post_8.jpg.webp',
+              'images/BLOG/post_9.jpg.webp',
+              'images/BLOG/post_10.jpg.webp',
        ]
 }
 

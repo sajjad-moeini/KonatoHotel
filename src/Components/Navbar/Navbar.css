@@ -23,6 +23,12 @@
        -webkit-background-clip: text;
        -webkit-text-fill-color: transparent;
 }
+.nav-item-active{
+       background: linear-gradient(to top , #0d6efd 20%,#00AEFF 20%,#fff 70% );
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+       font-size: 1.2rem;
+}
 .navbar-btn{
        background-color: #00AEFF !important;
        color: aliceblue !important;

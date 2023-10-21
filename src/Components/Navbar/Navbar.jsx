@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import store from '../../../src/store';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import Dropdown from 'react-bootstrap/Dropdown';
 export default function Navbarr() {
   return (
@@ -20,21 +20,7 @@ export default function Navbarr() {
           <Nav className="me-auto">
             {
               store.navbar.map((navitem,index)=>(
-                navitem.childs ? (
-                  <Dropdown className='d-flex-centring my-2' key={index}>
-                  <Dropdown.Toggle className='nav-item d-flex-centring blog-dropdown' id="dropdown-basic">
-                    {navitem.title}
-                  </Dropdown.Toggle>
-            
-                  <Dropdown.Menu >
-                  {navitem.childs.map((child,index)=>(
-                       <Link className='dropdown-item' to={child.path} key={index} >{child.title}</Link>
-                     ))}
-                  </Dropdown.Menu>
-                </Dropdown>
-                ): (
-                  <Link key={index} className='nav-item d-flex-centring my-2' to={navitem.path}>{navitem.title}</Link>
-                )
+                <NavLink key={index} className={(item)=>(item.isActive ? 'nav-item-active d-flex-centring my-2' :'nav-item d-flex-centring my-2')} to={navitem.path}>{navitem.title}</NavLink>
               ))
             }
            
